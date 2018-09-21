@@ -11,6 +11,8 @@ import LouvainMethod as lm
 if __name__ == '__main__':
     print('Welcome to the world of bottlenose dolphins!!\n')
     dolphin_graph = nx.read_gml('../data/dolphins.gml')
+    # nx.draw(dolphin_graph, with_labels=True)
+    # plt.show()
 
     # Solution for part-II :: Using Fiedler Vector
     fiedler_method = fm.FiedlerMethod(dolphin_graph)
